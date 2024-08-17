@@ -12,6 +12,8 @@ services:
     envVars:
       - key: LANGFLOW_DATABASE_URL
         value: sqlite:////app/data/.cache/langflow/langflow.db
+      - key: LANGFLOW_LANGCHAIN_CACHE
+        value: SQLiteCache
       - key: LANGFLOW_HOST
         value: 0.0.0.0
       - key: LANGFLOW_PORT
